@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Plug-Ins/NueGames/NueDeck/Scenes/NueCore.unity
     guid: 8730f6846a1505f4cbae9e87de5abdc9
+  - enabled: 1
+    path: Assets/Scenes/YellowstoneMap.unity
+    guid: e5607e51316177a40a5ecfd416047e97
+  - enabled: 1
+    path: Assets/Scenes/YellowstoneCombat1.unity
+    guid: a04ae29765804894daa754fff4365691
   m_configObjects: {}

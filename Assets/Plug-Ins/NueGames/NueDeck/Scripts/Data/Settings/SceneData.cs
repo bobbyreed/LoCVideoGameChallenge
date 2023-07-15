@@ -8,5 +8,9 @@ namespace NueGames.NueDeck.Scripts.Data.Settings
         public int mainMenuSceneIndex = 0;
         public int mapSceneIndex = 1;
         public int combatSceneIndex = 2;
+        public int yellowstoneMapSceneIndex = 4;
+        public int yellowstoneCombatSceneIndex = 5;
+        public int goldenFlyerMapSceneIndex = 6;
+        public int goldenFlyerCombatSceneIndex = 7;
     }
 }

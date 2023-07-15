@@ -4,6 +4,12 @@
     {
         Common,
         Rare,
-        Legendary
+        Legendary,
+        YellowstoneCommon,
+        YellowstoneRare,
+        YellowstoneLegendary,
+        GFCommon,
+        GFRare,
+        GFLegendary
     }
 }

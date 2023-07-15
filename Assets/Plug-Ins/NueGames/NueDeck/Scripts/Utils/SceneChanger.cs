@@ -16,7 +16,11 @@ namespace NueGames.NueDeck.Scripts.Utils
         {
             MainMenu,
             Map,
-            Combat
+            YellowstoneMap,
+            GoldenFlyerMap,
+            Combat,
+            YellowstoneCombat,
+            GoldenFlyerCombat
         }
         public void OpenMainMenuScene()
         {
@@ -45,12 +49,40 @@ namespace NueGames.NueDeck.Scripts.Utils
                     UIManager.SetCanvas(UIManager.RewardCanvas,false,true);
                    
                     break;
+                case SceneType.YellowstoneMap:
+                    UIManager.ChangeScene(GameManager.SceneData.yellowstoneMapSceneIndex);
+                    UIManager.SetCanvas(UIManager.CombatCanvas, false, true);
+                    UIManager.SetCanvas(UIManager.InformationCanvas, true, false);
+                    UIManager.SetCanvas(UIManager.RewardCanvas, false, true);
+
+                    break;
+                case SceneType.GoldenFlyerMap:
+                    UIManager.ChangeScene(GameManager.SceneData.goldenFlyerMapSceneIndex);
+                    UIManager.SetCanvas(UIManager.CombatCanvas, false, true);
+                    UIManager.SetCanvas(UIManager.InformationCanvas, true, false);
+                    UIManager.SetCanvas(UIManager.RewardCanvas, false, true);
+
+                    break;
                 case SceneType.Combat:
                     UIManager.ChangeScene(GameManager.SceneData.combatSceneIndex);
                     UIManager.SetCanvas(UIManager.CombatCanvas,false,true);
                     UIManager.SetCanvas(UIManager.InformationCanvas,true,false);
                     UIManager.SetCanvas(UIManager.RewardCanvas,false,true);
                     
+                    break;
+                case SceneType.YellowstoneCombat:
+                    UIManager.ChangeScene(GameManager.SceneData.yellowstoneCombatSceneIndex);
+                    UIManager.SetCanvas(UIManager.CombatCanvas, false, true);
+                    UIManager.SetCanvas(UIManager.InformationCanvas, true, false);
+                    UIManager.SetCanvas(UIManager.RewardCanvas, false, true);
+
+                    break;
+                case SceneType.GoldenFlyerCombat:
+                    UIManager.ChangeScene(GameManager.SceneData.goldenFlyerCombatSceneIndex);
+                    UIManager.SetCanvas(UIManager.CombatCanvas, false, true);
+                    UIManager.SetCanvas(UIManager.InformationCanvas, true, false);
+                    UIManager.SetCanvas(UIManager.RewardCanvas, false, true);
+
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(type), type, null);
@@ -60,9 +92,25 @@ namespace NueGames.NueDeck.Scripts.Utils
         {
             StartCoroutine(DelaySceneChange(SceneType.Map));
         }
+        public void OpenYellowStoneMapScene()
+        {
+            StartCoroutine(DelaySceneChange(SceneType.YellowstoneMap));
+        }
+        public void OpenGoldenFlyerMapScene()
+        {
+            StartCoroutine(DelaySceneChange(SceneType.GoldenFlyerMap));
+        }
         public void OpenCombatScene()
         {
             StartCoroutine(DelaySceneChange(SceneType.Combat));
+        }
+        public void OpenYellowstoneCombatScene()
+        {
+            StartCoroutine(DelaySceneChange(SceneType.YellowstoneCombat));
+        }
+        public void OpenGoldenFlyerCombatScene()
+        {
+            StartCoroutine(DelaySceneChange(SceneType.GoldenFlyerCombat));
         }
         public void ChangeScene(int sceneId)
         {

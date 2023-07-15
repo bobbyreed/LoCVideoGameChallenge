@@ -499,6 +499,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Encounter1
       objectReference: {fileID: 0}
+    - target: {fileID: 4910681922396888759, guid: 6888e9c09cfb0d743ae01323df723b8c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenYellowstoneCombatScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910681922396888759, guid: 6888e9c09cfb0d743ae01323df723b8c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: NueGames.NueDeck.Scripts.Utils.SceneChanger, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4910681922548103487, guid: 6888e9c09cfb0d743ae01323df723b8c, type: 3}
       propertyPath: m_text
       value: 'Jim Bridger
